@@ -1,0 +1,83 @@
+---
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Card, CardContent } from "@/components/ui/card";
+---
+
+<div class="min-h-screen bg-background text-gray-800">
+  <!-- Campaign Flyer Section -->
+  <section class="container mx-auto px-4 py-12">
+    <img
+      src="https://res.cloudinary.com/dakqk73zf/image/upload/v1739045437/OPT_B_edzxzg.png"
+      alt="LaNeesha Givens Campaign Flyer"
+      class="mx-auto rounded-lg shadow-lg"
+    />
+  </section>
+
+  <!-- Email Signup Form -->
+  <section class="container mx-auto px-4 py-8">
+    <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+      <Input
+        type="email"
+        placeholder="Enter your email to stay updated"
+        class="flex-grow bg-white text-gray-800 border-gray-300"
+      />
+      <Button type="submit" class="bg-primary text-primary-foreground hover:bg-primary/90">
+        Join Mailing List
+      </Button>
+    </form>
+  </section>
+
+  <!-- Voting Information -->
+  <section class="container mx-auto px-4 py-12 text-center">
+    <h2 class="text-3xl font-bold mb-8 text-gray-800">Voting Information</h2>
+    <div class="flex flex-col md:flex-row gap-4 justify-center max-w-3xl mx-auto">
+      <Button class="text-lg py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+        Early Voting Information
+      </Button>
+      <Button class="text-lg py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+        Polling Places
+      </Button>
+      <Button class="text-lg py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+        Mail Ballot Application
+      </Button>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="container mx-auto px-4 py-12">
+    <Card class="max-w-4xl mx-auto bg-white shadow-lg">
+      <CardContent class="p-8">
+        <h2 class="text-3xl font-bold mb-4 text-gray-800">About LaNeesha Givens</h2>
+        <p class="text-lg leading-relaxed text-gray-700">
+          I am a dedicated civil servant with a deep passion for justice and equity. With 25 years of experience as
+          an inspector and compliance manager, I've devoted my career to ensuring the people in my community have
+          access to the best resources and services. My vision includes increasing home values and attracting more
+          demand to live in Olympia Fields. I aim to revitalize our business infrastructure and organize events that
+          will generate interest and revenue from the surrounding south suburbs and the wider Chicagoland area.
+        </p>
+      </CardContent>
+    </Card>
+  </section>
+
+  <!-- Second Flyer -->
+  <section class="container mx-auto px-4 py-12">
+    <img
+      src="https://res.cloudinary.com/dakqk73zf/image/upload/v1739045300/4984835317892308204_qomqc1.png"
+      alt="LaNeesha Givens Campaign Information"
+      class="mx-auto rounded-lg shadow-lg"
+    />
+  </section>
+
+  <!-- Social Media Links -->
+  <footer class="container mx-auto px-4 py-8 text-center">
+    <div class="flex justify-center gap-6">
+      <a href="#" class="text-3xl text-gray-800 hover:text-primary transition-colors">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="#" class="text-3xl text-gray-800 hover:text-primary transition-colors">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </footer>
+</div>

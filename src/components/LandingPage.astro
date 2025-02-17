@@ -28,30 +28,30 @@ import { BsFacebook } from "react-icons/bs";
       className="flex-grow bg-white text-gray-800 border-gray-300 sm:text-[20px]! sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box]"
       name="email"
     />
-    <Button type="submit" className="bg-primary text-primary-foreground hover:bg-primary/90 sm:text-[30px] sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box]">
+    <Button type="submit" className="w-full bg-black text-white hover:bg-primary/90 text-base sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box]">
       Join Mailing List
     </Button>
   </form>
 
   <!-- Voting Information -->
   <section class="container mx-auto px-4 py-12 text-center">
-    <h2 class="text-3xl font-bold mb-8 text-gray-800 sm:text-[45px]">Voting Information</h2>
+    <h2 class="text-xl font-bold mb-8 text-gray-800 sm:text-2xl">Voting Information</h2>
     <div class="flex flex-col md:flex-row gap-4 justify-center max-w-3xl mx-auto">
       <a href="https://www.cookcountyclerkil.gov/elections/ways-to-vote" target="_blank" class="cursor-pointer">
         <Button
-          className="text-lg py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-[30px] sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box]"
+          className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#66BB6A]"
           style={{ cursor: 'pointer' }}
         >
           Early Voting Information
         </Button>
       </a>
       <a href="https://www.olympia-fields.com/221/Voter-Information" target="_blank" class="cursor-pointer">
-        <Button className="text-lg py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-[30px] sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box]" style={{ cursor: 'pointer'}}>
+        <Button className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#66BB6A]" style={{ cursor: 'pointer'}}>
           Polling Places
         </Button>
       </a>
       <a href="https://mailvoting.cookcountyclerkil.gov/" target="_blank" class="cursor-pointer">
-        <Button className="text-lg py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-[30px] sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box]" style={{ cursor: 'pointer'}}>
+        <Button className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#66BB6A]" style={{ cursor: 'pointer'}}>
           Mail Ballot Application
         </Button>
       </a>
@@ -62,20 +62,39 @@ import { BsFacebook } from "react-icons/bs";
   <section class="container mx-auto px-4 py-12 max-w-[60em]">
     <Card class="max-w-2xl mx-auto bg-white shadow-lg">
       <CardContent class="p-12">
-        <h2 class="text-3xl font-bold mb-4 text-gray-800 mt-[1em] sm:text-[45px]">
-          About LaNeesha Givens
-        </h2>
-        <p class="text-2xl sm:text-[40px] leading-relaxed text-gray-700 whitespace-pre-line">
-          As a passionate advocate for social justice and a seasoned professional in regulatory compliance, I bring a unique combination of experience and dedication to fostering positive change. Throughout my career, I have worked diligently to promote fairness, equality, and accountability within organizations, ensuring that policies and practices are aligned with ethical standards and community needs.
-
-          With a strong foundation in regulatory compliance, I have developed a keen understanding of the complexities of governance, policy enforcement, and risk management. This experience allows me to navigate regulatory frameworks effectively while advocating for transparent and inclusive processes that benefit all members of the community.
-
-          Collaboration and community engagement are at the heart of my approach. I believe that the best solutions come from open dialogue, collective problem-solving, and creating spaces where everyone feels heard and valued. Whether working with stakeholders, advocating for marginalized voices, or facilitating partnerships, I am deeply committed to building bridges and empowering individuals to take an active role in shaping the future of their community.
-
-          As a Village Trustee, I am excited to bring my experience in social justice and regulatory compliance to the table, working alongside fellow trustees to create a more equitable, sustainable, and thriving community for all.
-        </p>
+        <div class="space-y-6 py-6">
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 sm:text-2xl">The Candidate</h3>
+            <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+              I am a dedicated civil servant with a deep passion for justice and equity. I've devoted my career to ensuring the people in my community have access to the best resources and services. As a passionate advocate for social justice and a seasoned professional in governance and regulatory compliance, I bring a unique combination of experience and dedication to facilitate the change we need in Olympia Fields.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 sm:text-2xl">The Vision</h3>
+            <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+              I see tremendous potential to revitalize our village, and I am eager to forge strong partnerships with neighboring villages to promote collaboration. My vision includes increasing home values and attracting more demand to live in Olympia Fields. Additionally, I aim to revitalize our business infrastructure and organize events that will generate interest and revenue.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-gray-800 sm:text-2xl">The Plan</h3>
+            <p class="text-base sm:text-lg leading-relaxed text-gray-700">
+              Collaboration and community engagement are at the heart of my approach. As a woman of faith with a heart for family I believe that the best solutions come from open dialogue, collective problem-solving, and creating spaces where everyone feels heard and valued. Whether working with stakeholders, advocating for marginalized voices, or facilitating partnerships, I am deeply committed to building bridges and empowering individuals to take an active role in shaping the future of our community.
+            </p>
+          </div>
+        </div>
       </CardContent>
     </Card>
+  </section>
+
+  <!-- Donate Section -->
+  <section class="container mx-auto px-4 py-12 max-w-[60em] flex justify-center">
+    <a href="https://www.paypal.com/qrcodes/p2pqrc/LK4PJS9A9AV4A" target="_blank">
+      <Button
+        className="bg-white font-bold text-[29px] py-[5px] px-[24px] sm:text-[56px] sm:py-[24px] sm:px-[40px] size-fit cursor-pointer text-[#66BB6A]"
+      >
+        Help Fund The Movement
+      </Button>
+    </a>
   </section>
 
   <!-- Second Flyer -->
@@ -90,8 +109,8 @@ import { BsFacebook } from "react-icons/bs";
   <!-- Social Media Links -->
   <footer class="container mx-auto px-4 py-8 text-center">
     <div class="flex justify-center gap-6">
-      <a href="https://www.facebook.com/profile.php?id=61572895265333" class="text-3xl text-gray-800 hover:text-primary transition-colors" target="_blank">
-        <BsFacebook fontSize={50} />
+      <a href="https://www.facebook.com/profile.php?id=61572895265333" class="text-xl text-gray-800 hover:text-primary transition-colors" target="_blank">
+        <BsFacebook fontSize={24} className="text-[#1877F2]"/>
       </a>
     </div>
   </footer>

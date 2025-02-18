@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 :root {
-  --background: 340 82% 76%; /* #F48FB1 */
+  --background: #FFCC80; /* #F48FB1 */
   --foreground: #ffffff;
-  --primary: #e8b4a4;
+  --primary: red;
   --primary-foreground: #000000;
   --card-background: #ffffff;
   --card-foreground: #000000;
 }
 
 body {
-  background-color: hsl(var(--background));
+  background-color: var(--background);
   color: var(--foreground);
 }

@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { BsFacebook } from "react-icons/bs";
+import PhotoGallery from "@/components/PhotoGallery.jsx";
 
 ---
 
@@ -39,19 +40,19 @@ import { BsFacebook } from "react-icons/bs";
     <div class="flex flex-col md:flex-row gap-4 justify-center max-w-3xl mx-auto">
       <a href="https://www.cookcountyclerkil.gov/elections/ways-to-vote" target="_blank" class="cursor-pointer">
         <Button
-          className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#66BB6A]"
+          className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#7CB342]"
           style={{ cursor: 'pointer' }}
         >
           Early Voting Information
         </Button>
       </a>
       <a href="https://www.olympia-fields.com/221/Voter-Information" target="_blank" class="cursor-pointer">
-        <Button className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#66BB6A]" style={{ cursor: 'pointer'}}>
+        <Button className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#7CB342]" style={{ cursor: 'pointer'}}>
           Polling Places
         </Button>
       </a>
       <a href="https://mailvoting.cookcountyclerkil.gov/" target="_blank" class="cursor-pointer">
-        <Button className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#66BB6A]" style={{ cursor: 'pointer'}}>
+        <Button className="text-base py-6 bg-primary text-primary-foreground hover:bg-primary/9 sm:text-lg sm:py-[13px] sm:px-[20px] sm:[box-sizing:content-box] bg-[#7CB342]" style={{ cursor: 'pointer'}}>
           Mail Ballot Application
         </Button>
       </a>
@@ -88,14 +89,20 @@ import { BsFacebook } from "react-icons/bs";
 
   <!-- Donate Section -->
   <section class="container mx-auto px-4 py-12 max-w-[60em] flex justify-center">
-    <a href="https://www.paypal.com/qrcodes/p2pqrc/LK4PJS9A9AV4A" target="_blank">
-      <Button
-        className="bg-white font-bold text-[29px] py-[5px] px-[24px] sm:text-[56px] sm:py-[24px] sm:px-[40px] size-fit cursor-pointer text-[#66BB6A]"
-      >
-        Help Fund The Movement
-      </Button>
-    </a>
+    <div
+      class="bg-white font-bold text-[29px] py-[5px] px-[24px] sm:text-[56px] sm:py-[24px] sm:px-[40px] size-fit cursor-pointer text-[#7CB342] flex flex-col items-center rounded-lg"
+    >
+      Help Fund The Movement
+      <img
+      src="https://res.cloudinary.com/dakqk73zf/image/upload/e_auto_color/v1739828380/Screen_Shot_2025-02-17_at_3.39.05_PM_x2kvjs.png"
+      alt="PayPal QR Code"
+      class="w-[200px] h-auto mt-4"
+    />
+    </div>
   </section>
+
+  <!-- New Photo Gallery Section (inserted underneath the donate button) -->
+  <PhotoGallery client:load />
 
   <!-- Second Flyer -->
   <section class="container mx-auto px-4 py-12 sm:max-w-[100%]">

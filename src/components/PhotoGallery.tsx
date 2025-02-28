@@ -10,12 +10,12 @@ export default function PhotoGallery() {
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const images = [
-    "https://res.cloudinary.com/dakqk73zf/image/upload/v1739829173/FB_IMG_1671455823155-EDIT_fsad6p.jpg",
+    // "https://res.cloudinary.com/dakqk73zf/image/upload/v1739829173/FB_IMG_1671455823155-EDIT_fsad6p.jpg",
     "https://res.cloudinary.com/dakqk73zf/image/upload/v1739829173/20241130_155507_udvjaq.jpg",
-    "https://res.cloudinary.com/dakqk73zf/image/upload/v1739829173/20240118_201145_t8lck1.jpg",
+    // "https://res.cloudinary.com/dakqk73zf/image/upload/v1739829173/20240118_201145_t8lck1.jpg",
     "https://res.cloudinary.com/dakqk73zf/image/upload/v1739829172/20210701_094054_zfgce4.jpg",
     "https://res.cloudinary.com/dakqk73zf/image/upload/v1739828462/unnamed_1_r7cvoy.jpg",
-    "https://res.cloudinary.com/dakqk73zf/image/upload/v1739828462/unnamed_gd4vqh.jpg",
+    // "https://res.cloudinary.com/dakqk73zf/image/upload/v1739828462/unnamed_gd4vqh.jpg",
     "https://res.cloudinary.com/dakqk73zf/image/upload/v1739064092/OPT_B_edzxzg.png",
   ]
 
